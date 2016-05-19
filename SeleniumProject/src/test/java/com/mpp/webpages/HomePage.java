@@ -34,4 +34,23 @@ public class HomePage {
 		
 	}
 	
+	public static WebElement Catloglinktxt(WebDriver driver){		
+		element = driver.findElement(By.xpath("html/body/table[1]/tbody/tr[2]/td[1]/a[2]"));		
+		return element;
+		
+	}
+	
+	
+	public static WebElement SupportSidelinktxt(WebDriver driver){		
+		element = driver.findElement(By.xpath("html/body/table[1]/tbody/tr[2]/td[1]/a[3]"));		
+		return element;
+		
+	}
+	
+	public static WebElement  Administrationlinktxt(WebDriver driver){		
+		element = driver.findElement(By.xpath("html/body/table[1]/tbody/tr[2]/td[1]/a[1]"));		
+		return element;
+		
+	}
+	
 }
