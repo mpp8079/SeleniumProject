@@ -1,0 +1,7 @@
+Username_field =name:username
+Password_field =name:password
+Login_button =id:tdb1
+online_user=cssSelector:#sb-onlineusers > h3
+Url=http://www.gcrit.com/build3/admin/login.php?osCAdminID=23fhggrn9l9c06pltmeo88nvl1
+username=admin
+password=admin@123

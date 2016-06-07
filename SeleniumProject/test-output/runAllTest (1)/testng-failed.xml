@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [runAllTest (1)]">
+  <test name="runAllTest">
+    <classes>
+      <class name="web.mpp.tests.ObjectMapLogin"/>
+    </classes>
+  </test> <!-- runAllTest -->
+  <test name="runAllTest(failed)">
+    <classes>
+      <class name="web.mpp.tests.ObjectMapLogin">
+        <methods>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- web.mpp.tests.ObjectMapLogin -->
+    </classes>
+  </test> <!-- runAllTest(failed) -->
+</suite> <!-- Failed suite [runAllTest (1)] -->

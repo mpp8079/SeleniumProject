@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path=".\\src\\test\\resources\\xml\\RunTest.xml"></suite-file>
+		<suite-file path=".\\src\\test\\resources\\xml\\Login.xml"></suite-file>
+		<suite-file path=".\\src\\test\\resources\\xml\\objectmap.xml"></suite-file>
+		<suite-file path=".\\src\\test\\resources\\xml\\MarcuryRegister.xml"></suite-file>
+	</suite-files>
+</suite>
