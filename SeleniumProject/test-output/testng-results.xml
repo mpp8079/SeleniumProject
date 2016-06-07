@@ -1,17 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18258" started-at="2016-05-03T01:50:38Z" finished-at="2016-05-03T01:50:57Z">
+  <suite name="Suite" duration-ms="0" started-at="2016-06-05T02:42:10Z" finished-at="2016-06-05T02:42:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18258" started-at="2016-05-03T01:50:38Z" finished-at="2016-05-03T01:50:57Z">
+  </suite> <!-- Suite -->
+  <suite name="runAllTest (0)" duration-ms="35516" started-at="2016-06-05T02:41:13Z" finished-at="2016-06-05T02:41:48Z">
+    <groups>
+    </groups>
+    <test name="runAllTest" duration-ms="35516" started-at="2016-06-05T02:41:13Z" finished-at="2016-06-05T02:41:48Z">
       <class name="web.mpp.tests.LoginTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:web.mpp.tests.LoginTest@7bb11784]" name="login" duration-ms="18209" started-at="2016-05-02T20:50:38Z" finished-at="2016-05-02T20:50:57Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:web.mpp.tests.LoginTest@71c7db30]" name="login" duration-ms="35511" started-at="2016-06-04T21:41:13Z" finished-at="2016-06-04T21:41:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- web.mpp.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- runAllTest -->
+  </suite> <!-- runAllTest (0) -->
+  <suite name="runAllTest (1)" duration-ms="12693" started-at="2016-06-05T02:41:48Z" finished-at="2016-06-05T02:42:01Z">
+    <groups>
+    </groups>
+    <test name="runAllTest" duration-ms="12693" started-at="2016-06-05T02:41:48Z" finished-at="2016-06-05T02:42:01Z">
+      <class name="web.mpp.tests.ObjectMapLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:web.mpp.tests.ObjectMapLogin@7d417077]" name="setup" is-config="true" duration-ms="10923" started-at="2016-06-04T21:41:48Z" finished-at="2016-06-04T21:41:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:web.mpp.tests.ObjectMapLogin@7d417077]" name="login" duration-ms="55" started-at="2016-06-04T21:41:59Z" finished-at="2016-06-04T21:41:59Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mpp.webpages.ObjectMap.getLocator(ObjectMap.java:34)
+	at web.mpp.tests.ObjectMapLogin.login(ObjectMapLogin.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:web.mpp.tests.ObjectMapLogin@7d417077]" name="tearDown" is-config="true" duration-ms="1696" started-at="2016-06-04T21:41:59Z" finished-at="2016-06-04T21:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- web.mpp.tests.ObjectMapLogin -->
+    </test> <!-- runAllTest -->
+  </suite> <!-- runAllTest (1) -->
+  <suite name="runAllTest (2)" duration-ms="8382" started-at="2016-06-05T02:42:01Z" finished-at="2016-06-05T02:42:10Z">
+    <groups>
+    </groups>
+    <test name="runAllTest" duration-ms="8382" started-at="2016-06-05T02:42:01Z" finished-at="2016-06-05T02:42:10Z">
+      <class name="com.mpp.webpages.MarcuryRegister">
+        <test-method status="PASS" signature="registerLink()[pri:0, instance:com.mpp.webpages.MarcuryRegister@129a8472]" name="registerLink" duration-ms="8380" started-at="2016-06-04T21:42:01Z" description="Register Test" finished-at="2016-06-04T21:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerLink -->
+      </class> <!-- com.mpp.webpages.MarcuryRegister -->
+    </test> <!-- runAllTest -->
+  </suite> <!-- runAllTest (2) -->
+  <suite name="runAllTest" duration-ms="148" started-at="2016-06-05T02:41:13Z" finished-at="2016-06-05T02:41:13Z">
+    <groups>
+    </groups>
+    <test name="runAllTest" duration-ms="148" started-at="2016-06-05T02:41:13Z" finished-at="2016-06-05T02:41:13Z">
+      <class name="web.mpp.tests.ChromeTest">
+        <test-method status="FAIL" signature="testChrome()[pri:0, instance:web.mpp.tests.ChromeTest@34340fab]" name="testChrome" duration-ms="70" started-at="2016-06-04T21:41:13Z" finished-at="2016-06-04T21:41:13Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.util.Hashtable.put(Unknown Source)
+	at java.util.Properties.setProperty(Unknown Source)
+	at java.lang.System.setProperty(Unknown Source)
+	at web.mpp.tests.ChromeTest.testChrome(ChromeTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChrome -->
+      </class> <!-- web.mpp.tests.ChromeTest -->
+    </test> <!-- runAllTest -->
+  </suite> <!-- runAllTest -->
 </testng-results>

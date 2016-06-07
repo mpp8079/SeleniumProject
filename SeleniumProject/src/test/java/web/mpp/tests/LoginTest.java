@@ -4,12 +4,19 @@
 package web.mpp.tests;
 
 
+import static org.junit.Assert.*;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import com.mpp.webpages.ConfigReader;
 import com.mpp.webpages.HomePage;
 
 /**
@@ -18,12 +25,15 @@ import com.mpp.webpages.HomePage;
  */
 public class LoginTest {
 	
+	ConfigReader conf = new ConfigReader();
 	
 	
 	@Test
-	public void login(){
+	public void login() throws Exception{
+		
+		
 		WebDriver driver;		
-		String url = "http://www.gcrit.com/build3/admin/login.php?osCAdminID=23fhggrn9l9c06pltmeo88nvl1";
+		;
 		
 		//lunch firefox browser
 		
@@ -31,7 +41,7 @@ public class LoginTest {
 		driver.manage().window().maximize();
 		
 		//lunch url page 
-		driver.get(url);
+		driver.get(conf.getApplicationURL());
 		
 		// click on Catlog link 
 		HomePage.Catloglinktxt(driver).click();
